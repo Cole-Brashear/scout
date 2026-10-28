@@ -41,7 +41,7 @@ It keeps a tracker of every role and conversation, and it learns from what you p
 
 ## Install
 
-You need access to this repo. Then pick your app.
+Pick your app.
 
 ### Claude Code
 
@@ -109,4 +109,4 @@ They're plain text, so you can read and edit all of them.
 
 ## Status
 
-Private beta, free to testers. Built by Cole Brashear from the process he used for his own new-grad search. Found a bug or a site that breaks it? Open an issue.
+Beta, and free. Built by Cole Brashear from the process he used for his own new-grad search. Found a bug or a site that breaks it? Open an issue.
