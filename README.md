@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="media/scout-launch.mp4"><img src="media/scout-launch.gif" alt="Scout launch video: a student gives a vague answer, Scout asks a sharper question, writes a profile, finds roles, tailors a resume, fills the form, and the student clicks Submit" width="800"></a>
+  <br>
+  <a href="media/scout-launch.mp4">Watch with sound</a>
+</p>
+
 # Scout
 
 Scout is a Claude skill that runs your job search with you. It starts by interviewing you about your life, what you're into, how you like to work and what you need, reads your resume, and writes a profile of what you're actually looking for. Then every week it finds roles that fit, researches each company, tailors your resume to the story that company wants to hear, drafts your answers and fills in the application. You read it over and click Submit.
@@ -71,7 +77,7 @@ They're plain text, so you can read and edit all of them.
 |---|---|
 | `scout/` | The skill source. Zipped as is, and the folder name is part of the format. |
 | `dist/scout.skill` | The built skill. Rebuild with `./build.sh` after any change. |
-| `site/` | The landing page the launch video is made from. |
+| `media/` | The launch video (made with /brag) and the GIF version shown above. |
 
 ## Status
 
