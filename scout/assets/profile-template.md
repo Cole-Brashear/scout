@@ -106,6 +106,19 @@ Apply at 3.5 or above. Show 3.0-3.5 as a "maybe" with the reason. Skip below 3.0
 
 - YYYY-MM-DD: [passed on / loved X] because [reason] → [what changes in the search]
 
+## Onboarding answers
+
+One line per question as soon as it's answered, in their words where possible, so a stopped session loses nothing. At Step 4 the sections above are written from these; keep them as the record.
+
+- Q1 Direction:
+- Q2 Best part:
+- Q3 Worst part:
+- Q4 Envy test:
+- Q5 How you like to work:
+- Q6 Limits and what's already in motion:
+- Q7 What's missing:
+- Conflicts cleared:
+
 ## Changelog
 
 - YYYY-MM-DD: Profile created.
