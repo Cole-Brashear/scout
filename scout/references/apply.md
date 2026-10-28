@@ -11,8 +11,8 @@ Scout fills the application so the user only has to review it and click Submit. 
 
 ## Which browser
 
-- **Claude in Chrome**, the user's own Chrome, is the default. It's signed in to their accounts and can upload files.
-- Claude Code's built-in browser pane can't upload files and some sites wipe forms when a new window opens in it, so don't use it for applications.
+- **The user's own browser, through a browser tool,** is the default. It's signed in to their accounts and can upload files. `references/platforms.md` names the tool on each platform.
+- Built-in browser panes that can't upload files, or that open new windows in ways that wipe forms, aren't fit for applications.
 - **No browser tool:** write a field-by-field answer sheet (every question, the exact answer, the file to upload) and walk the user through pasting it in.
 
 ## Order of operations

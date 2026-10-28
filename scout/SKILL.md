@@ -14,7 +14,7 @@ Two promises hold everything together:
 
 ## Where things live
 
-Keep everything in the user's job-search folder: in Claude Code, the current working directory; in Cowork, the folder they shared. If that isn't clearly a job-search folder (a home directory, an unrelated project), suggest creating `Job Search/` and work there.
+Keep everything in the user's job-search folder, which is the folder you're working in. If that isn't clearly a job-search folder (a home directory, an unrelated project), suggest creating `Job Search/` and work there. **In ChatGPT,** a Project holds these files instead, and you can't edit them in place: follow the ChatGPT section of `references/platforms.md`.
 
 ```
 profile.md    Who they are and what they want. Steers every search.      (template: assets/profile-template.md)
@@ -41,7 +41,7 @@ The weekly goal lives in `profile.md` (default: 3 applications and 2 outreach me
 | Step | What happens | Read |
 |---|---|---|
 | 1. Find and vet | Search, read each full posting, keep only roles that pass the hard filters and fit the profile. Propose the week's batch; the user confirms. | `references/find-roles.md` |
-| 2. Research | One brief per role, in parallel subagents when available: the story the ideal candidate's resume tells, recruiter signals, language to mirror, questions for the user. | `references/research-brief.md` |
+| 2. Research | One brief per role, in parallel when the platform allows: the story the ideal candidate's resume tells, recruiter signals, language to mirror, questions for the user. | `references/research-brief.md` |
 | 3. Fill gaps | Ask the questions from the briefs. Assume the user did more than their resume shows, but confirm before using anything. Save answers to `facts.md`. | |
 | 4. Tailor the resume | Rewrite it to tell that role's story, true line by line. Build the .docx and PDF; the user approves. | `references/resume.md` |
 | 5. Written answers | "Why us", short answers, a cover letter only when required. Start from the company's own words and the user's real reasons. | `references/why-us.md` |
@@ -77,13 +77,13 @@ The profile is a working theory, not a contract. People figure out what they wan
 
 ## Tools
 
-Use what the environment has, and say so when something's missing.
+Scout runs in several AI apps. `references/platforms.md` says, for each one, where the files live, which browser to use and how to install. Read it once at the start of a session if you're unsure. Use what the environment has, and say so when something's missing.
 
 - **Web search and fetch:** finding roles and researching companies.
-- **Subagents** (Claude Code and Cowork): run research briefs in parallel, one per role. Without them, do the briefs one at a time.
-- **Claude in Chrome:** the user's own signed-in Chrome. Scout needs it for three things: reading their LinkedIn profile, searching LinkedIn jobs and alumni, and filling applications, including resume uploads. No connector can read a LinkedIn profile or search LinkedIn jobs, so Chrome is the only way in. Claude Code's built-in browser pane can't upload files, so use Chrome for applications too. Without Chrome: the user can save their LinkedIn profile as a PDF (Resources or More, then Save to PDF), and for applications write an answer sheet (`research/<company-role>-answers.md`) they can paste from.
-- **Gmail connector (optional):** read job-alert emails each week. Read only, never send.
+- **Parallel helpers (subagents),** where the platform has them: run research briefs at the same time, one per role. Without them, do the briefs one at a time.
+- **A browser tool that drives the user's own signed-in browser.** Scout needs it for three things: reading their LinkedIn profile, searching LinkedIn jobs and alumni, and filling applications, including resume uploads. No connector can read a LinkedIn profile or search LinkedIn jobs, so a signed-in browser is the only way in. Without one, the user saves their LinkedIn profile as a PDF (Resources or More, then Save to PDF), and you write an answer sheet (`research/<company-role>-answers.md`) they paste into applications.
+- **An email connector (optional):** read job-alert emails each week. Read only, never send.
+- **A job-search connector (optional):** another source of listings.
 - **Scripts** in this skill's `scripts/` folder, run with Python 3:
-  - `jobs.py` lists live open roles from a company's Greenhouse, Ashby or Lever job board, with posting dates. Standard library only.
+  - `jobs.py` lists live open roles from a company's Greenhouse, Ashby or Lever job board, with posting dates. Standard library only, but it needs internet access.
   - `resume.py` inspects the base resume, builds tailored versions that keep its formatting (or a clean ATS-friendly layout), and exports a PDF with a page count. It needs the python-docx library. If it's missing, tell the user, then run `pip3 install python-docx` once they agree.
-- **Job-search connectors (optional):** if one is connected, such as ZipRecruiter, use it as another source of listings.

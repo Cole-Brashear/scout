@@ -2,7 +2,7 @@
 
 Research comes before touching the resume. A generic resume undersells people, because it tells no story in particular. The brief finds the story this company wants to hear, so the resume can tell it with the user's real facts.
 
-Run one brief per role. With subagents, launch them in parallel and give each one everything it needs, since it starts with no context. Without subagents, run them one at a time yourself. Save each to `research/<company>-<role>.md`.
+Run one brief per role. If the platform can run helpers in parallel (subagents), launch one per role and give each one everything it needs, since it starts with no context. Otherwise run them one at a time yourself. Save each to `research/<company>-<role>.md`.
 
 ## The prompt to give each research agent
 

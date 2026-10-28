@@ -12,7 +12,7 @@ Go beyond the titles the user named. Each direction goes by many titles, and new
 
 Roughly in order of signal:
 
-1. **Job-alert emails** (when a Gmail connector is available). Search the past 7 days for alerts from LinkedIn, Handshake, Indeed and company career sites ("new jobs", "job alert", "jobs for you"). Open the roles they point to; don't trust the email's summary.
+1. **Job-alert emails** (when an email connector is available). Search the past 7 days for alerts from LinkedIn, Handshake, Indeed and company career sites ("new jobs", "job alert", "jobs for you"). Open the roles they point to; don't trust the email's summary.
 2. **Target companies' own job boards.** Many companies post through Greenhouse, Ashby or Lever, which publish a live, dated list of open roles. Use the script:
 
    ```bash
@@ -21,12 +21,12 @@ Roughly in order of signal:
    ```
 
    The board name is the slug in the company's job links (`job-boards.greenhouse.io/<board>`, `jobs.ashbyhq.com/<board>`, `jobs.lever.co/<board>`). A 404 means the wrong board name or the wrong ATS, not "no openings". Lever dates are when a posting was first created, so evergreen roles can show dates years old while still open; filter Lever results by title, not `--days`. Workday and in-house career sites don't publish a list like this, so read their pages directly. Record each target's `ats:board` in the profile's search plan once found.
-3. **LinkedIn Jobs** (needs Claude in Chrome, with the user signed in to LinkedIn in Chrome; no connector can search LinkedIn jobs). Filtered search URLs tend to redirect to LinkedIn's AI search, so use a natural-language query instead: `https://www.linkedin.com/jobs/search-results/?keywords=<entry level operations analyst jobs in Denver>`. Descriptions load only after scrolling the page. A posting's "People you can reach out to" box lists alumni and connections, which feeds outreach.
+3. **LinkedIn Jobs** (needs a browser tool with the user signed in to LinkedIn; no connector can search LinkedIn jobs). Filtered search URLs tend to redirect to LinkedIn's AI search, so use a natural-language query instead: `https://www.linkedin.com/jobs/search-results/?keywords=<entry level operations analyst jobs in Denver>`. Descriptions load only after scrolling the page. A posting's "People you can reach out to" box lists alumni and connections, which feeds outreach.
 4. **Web search**, which works without a browser: `site:jobs.lever.co "new grad" analyst Denver`, `site:job-boards.greenhouse.io "2027" "early career"`, `"rotational program" 2027 operations`.
 5. **Handshake** and the school's career site (the user signs in). Employers there are already recruiting at their school.
 6. **Startups:** Y Combinator's Work at a Startup (workatastartup.com) and Wellfound. Startups hire closer to the start date and rarely run formal new-grad programs, so "0-2 years" roles at seed to Series B companies are fair game.
 7. **New-grad programs:** rotational, leadership-development and analyst programs at large companies. Search "<company> new grad program 2027" or "<industry> rotational program".
-8. **Job-search connectors,** if the user has one connected (ZipRecruiter has one, for example). Treat results like any listing: open the original posting before trusting it.
+8. **Job-search connectors,** if the user has one connected (ZipRecruiter offers one, for example). Treat results like any listing: open the original posting before trusting it.
 
 ## 3. Vet each posting
 

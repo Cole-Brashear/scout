@@ -9,18 +9,18 @@ Open with this, in your own words:
 > I'll get you set up in about 10 minutes. I need two things from you:
 >
 > 1. **Your resume.** Drag the file in or give me its path. A Word file (.docx) is best, because I can keep your formatting when I tailor it. A PDF works too.
-> 2. **Your LinkedIn.** Paste your profile URL. [If Claude in Chrome is available:] I'll read it in your Chrome, so make sure you're signed in to LinkedIn there. [If not:] On your LinkedIn profile, click Resources (or More), then Save to PDF, and drop that file in.
+> 2. **Your LinkedIn.** Paste your profile URL. [If you can drive the user's own browser:] I'll read it in your browser, so make sure you're signed in to LinkedIn there. [If not:] On your LinkedIn profile, click Resources (or More), then Save to PDF, and drop that file in.
 >
 > No LinkedIn yet? That's fine, the resume is enough. After I read them, I'll ask about 7 quick questions. Everything I learn is saved to files in this folder, so you can read and edit it.
 
-Check which tools you have before sending it. If Claude in Chrome isn't available, add one line: Scout uses it later to search LinkedIn jobs and fill applications, and onboarding works fine without it for now.
+Check which tools you have before sending it. If you can't drive the user's browser, add one line naming what would let you (`references/platforms.md` has it per platform): Scout uses it later to search LinkedIn jobs and fill applications, and onboarding works fine without it for now. In ChatGPT, also say that their files will live in this Project (see `references/platforms.md`).
 
 Create `profile.md` from `assets/profile-template.md` and `facts.md` from `assets/facts-template.md`, and update the status line as you go so a stopped session can pick up where it left off.
 
 ## Step 2: Read before asking
 
 - Save the resume to `resumes/base/` and never edit it.
-- **LinkedIn in Chrome:** open their profile URL, scroll so every section loads, and open "Show all" on Experience, Skills and Licenses & certifications. Read only: never click Connect, Message, Follow or Edit. If LinkedIn shows a sign-in wall, ask them to sign in to LinkedIn in Chrome, or use Save to PDF instead.
+- **LinkedIn in the browser:** open their profile URL, scroll so every section loads, and open "Show all" on Experience, Skills and Licenses & certifications. Read only: never click Connect, Message, Follow or Edit. If LinkedIn shows a sign-in wall, ask them to sign in to LinkedIn in Chrome, or use Save to PDF instead.
 - **Fill `facts.md`** from both documents: education, every role with its dates, skills, certifications, languages, awards, links. These are the user's own documents, so their claims count as confirmed. Note anything that conflicts between the two (different dates, a job on one but not the other) and ask about it in Step 3.
 - **Writing voice:** their LinkedIn About section and any posts are a sample of how they write. Note it in the profile's "Writing voice" section. Their chat messages count too.
 - **Make notes for yourself:** what they seem to be aiming at, their strongest proof, what's missing or unclear. These decide which questions need asking and how to word them.

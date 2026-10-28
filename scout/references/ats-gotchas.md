@@ -6,7 +6,7 @@ An ATS (applicant tracking system) is the software behind a company's applicatio
 
 - Before any risky step (an upload, a page change, a long pause), read every field value out with a script so a wipe can be refilled exactly. **Field-tested.**
 - Some browser tools block script output that looks like cookies or query strings. Strip ids and punctuation from what you print. **Field-tested.**
-- Opening a new window from inside the built-in browser pane can replace the tab and wipe the form. Use Claude in Chrome. **Field-tested.**
+- Opening a new window from inside an app's built-in browser pane (Claude Code's desktop app, for one) can replace the tab and wipe the form. Fill applications in the user's own browser. **Field-tested.**
 
 ## Greenhouse (job-boards.greenhouse.io, boards.greenhouse.io)
 
