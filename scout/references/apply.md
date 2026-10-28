@@ -6,7 +6,7 @@ Scout fills the application so the user only has to review it and click Submit. 
 
 - The tailored resume PDF is approved.
 - Written answers are approved (`research/<company-role>-answers.md`).
-- `facts.md` standing answers are current.
+- `facts.md` has standing form answers. Before the first application they won't exist yet, so ask for them in one message and save them: the email and phone they apply with; whether they're authorized to work in the US and need sponsorship now or later; how they want to answer the voluntary self-ID questions (gender, race/ethnicity, veteran status, disability), where "decline to self-identify" is always fine; how to answer salary-expectation questions; and anything they'll always type themselves, often home address, signatures and legal attestations. They're never asked twice.
 - Check `references/ats-gotchas.md` for the site's known traps.
 
 ## Which browser

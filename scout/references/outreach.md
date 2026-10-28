@@ -2,11 +2,15 @@
 
 A warm conversation does more than ten cold applications, especially at companies without big new-grad programs. The weekly goal in `profile.md` (default 2) counts messages the user actually sends.
 
+## Before the first outreach
+
+If the profile's "Network" section is empty, ask once: "Who do you know? Family and family friends and what they do, mentors, coaches, professors, past bosses, friends a year or two ahead, anyone at the companies we're targeting. And can you use your school's alumni directory or Handshake?" Save the answers to the profile. This is often where the best leads come from, and most people forget who they know until asked.
+
 ## Who to reach out to, best first
 
 1. **People tied to the role:** the hiring manager, the person who posted it, the program's recruiter. The research brief (section G) and LinkedIn's posting page often name them.
 2. **Alumni at the company:** LinkedIn's "People you can reach out to" on a job page, the alumni tab on the school's LinkedIn page, or the school's alumni directory. Alumni a few years out are the most likely to reply.
-3. **Their own network:** family, family friends, coaches, professors and past bosses from the profile's network notes. Ask the user who might know someone at the target company.
+3. **Their own network:** people from the profile's "Network" section. Ask the user who might know someone at the target company.
 4. **Cold, specific strangers:** someone whose post, talk or project gives a real reason to reach out.
 
 ## The ask

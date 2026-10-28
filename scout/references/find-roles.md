@@ -21,11 +21,12 @@ Roughly in order of signal:
    ```
 
    The board name is the slug in the company's job links (`job-boards.greenhouse.io/<board>`, `jobs.ashbyhq.com/<board>`, `jobs.lever.co/<board>`). A 404 means the wrong board name or the wrong ATS, not "no openings". Lever dates are when a posting was first created, so evergreen roles can show dates years old while still open; filter Lever results by title, not `--days`. Workday and in-house career sites don't publish a list like this, so read their pages directly. Record each target's `ats:board` in the profile's search plan once found.
-3. **LinkedIn Jobs** (needs the browser, with the user signed in). Filtered search URLs tend to redirect to LinkedIn's AI search, so use a natural-language query instead: `https://www.linkedin.com/jobs/search-results/?keywords=<entry level operations analyst jobs in Denver>`. Descriptions load only after scrolling the page. A posting's "People you can reach out to" box lists alumni and connections, which feeds outreach.
+3. **LinkedIn Jobs** (needs Claude in Chrome, with the user signed in to LinkedIn in Chrome; no connector can search LinkedIn jobs). Filtered search URLs tend to redirect to LinkedIn's AI search, so use a natural-language query instead: `https://www.linkedin.com/jobs/search-results/?keywords=<entry level operations analyst jobs in Denver>`. Descriptions load only after scrolling the page. A posting's "People you can reach out to" box lists alumni and connections, which feeds outreach.
 4. **Web search**, which works without a browser: `site:jobs.lever.co "new grad" analyst Denver`, `site:job-boards.greenhouse.io "2027" "early career"`, `"rotational program" 2027 operations`.
 5. **Handshake** and the school's career site (the user signs in). Employers there are already recruiting at their school.
 6. **Startups:** Y Combinator's Work at a Startup (workatastartup.com) and Wellfound. Startups hire closer to the start date and rarely run formal new-grad programs, so "0-2 years" roles at seed to Series B companies are fair game.
 7. **New-grad programs:** rotational, leadership-development and analyst programs at large companies. Search "<company> new grad program 2027" or "<industry> rotational program".
+8. **Job-search connectors,** if the user has one connected (ZipRecruiter has one, for example). Treat results like any listing: open the original posting before trusting it.
 
 ## 3. Vet each posting
 
@@ -40,6 +41,8 @@ Read the full posting, not the title. "Entry level" often means 2-5 years.
 ## 4. Propose the batch
 
 Bring the user the week's batch (their weekly goal, usually 3) plus 2-3 alternates. Mix it: mostly strong fits, one reach, and at most one safer pick. For each: company, title, location, pay, score, the one-line why, and the deadline. Lead with your pick order.
+
+**The first batch after onboarding is also calibration.** Show 5-6 roles across the profile's directions, including one stretch and one that matches what they said but not what their answers suggest, and ask them to rate each 1-5 with a few words why. Update the profile from the ratings, especially where a rating contradicts something they said, then pick the week's applications from the ones they rated highest.
 
 When they confirm, add the batch to `tracker.md` (stage Vetted). When they reject a role, ask why in a few words, then update "Learned from reactions" in the profile. Roles the user saved but you rejected on vetting go under "Passed on" with the reason, so they don't come back.
 

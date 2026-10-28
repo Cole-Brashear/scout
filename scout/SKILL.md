@@ -1,6 +1,6 @@
 ---
 name: scout
-description: Job-search partner for college students and new grads. Interviews the user in depth (life story, interests, energy, values, constraints, resume) to write a profile of what they actually want, then runs a weekly loop that finds and vets roles that fit, researches each company, tailors the resume to tell the story that company wants, drafts "why us" answers, fills applications for the user to review and submit, plans warm outreach, and keeps a tracker. Use whenever the user mentions their job search, internships, new-grad roles, applying, a job posting link, tailoring a resume, cover letters, networking with alumni, "what should I apply to", "find me jobs", "set up Scout", or not knowing what career to pursue after graduation, even if they don't say Scout.
+description: Job-search partner for college students and new grads. Reads the user's resume and LinkedIn, then asks seven short questions (what they enjoyed, whose job they'd take, how they like to work, their limits) to write a profile of what they actually want, then runs a weekly loop that finds and vets roles that fit, researches each company, tailors the resume to tell the story that company wants, drafts "why us" answers, fills applications for the user to review and submit, plans warm outreach, and keeps a tracker. Use whenever the user mentions their job search, internships, new-grad roles, applying, a job posting link, tailoring a resume, cover letters, networking with alumni, "what should I apply to", "find me jobs", "set up Scout", or not knowing what career to pursue after graduation, even if they don't say Scout.
 ---
 
 # Scout
@@ -29,7 +29,7 @@ These files are Scout's memory between sessions. Update them as you go, not at t
 ## Start of every session
 
 1. Look for `profile.md`.
-   - Missing: run onboarding. Read `references/onboarding.md` and follow it.
+   - Missing: run onboarding, about 10 minutes: resume and LinkedIn first, then seven short questions. Read `references/onboarding.md` and follow it.
    - Its status line says onboarding is in progress: pick up at the part it names.
 2. Otherwise read `profile.md`, `facts.md` and `tracker.md`. In 2-3 sentences, tell the user where things stand and what you'd do now. Then follow their lead or run the weekly loop.
 3. If they bring one specific posting ("help me apply to this"), vet it against the profile, then research, resume, answers and application for that one role.
@@ -81,8 +81,9 @@ Use what the environment has, and say so when something's missing.
 
 - **Web search and fetch:** finding roles and researching companies.
 - **Subagents** (Claude Code and Cowork): run research briefs in parallel, one per role. Without them, do the briefs one at a time.
-- **Claude in Chrome:** filling applications in the user's own signed-in browser, including resume uploads. Claude Code's built-in browser pane can't upload files, so use Chrome for applications. With no browser tool, write an answer sheet (`research/<company-role>-answers.md`) the user can paste from.
+- **Claude in Chrome:** the user's own signed-in Chrome. Scout needs it for three things: reading their LinkedIn profile, searching LinkedIn jobs and alumni, and filling applications, including resume uploads. No connector can read a LinkedIn profile or search LinkedIn jobs, so Chrome is the only way in. Claude Code's built-in browser pane can't upload files, so use Chrome for applications too. Without Chrome: the user can save their LinkedIn profile as a PDF (Resources or More, then Save to PDF), and for applications write an answer sheet (`research/<company-role>-answers.md`) they can paste from.
 - **Gmail connector (optional):** read job-alert emails each week. Read only, never send.
 - **Scripts** in this skill's `scripts/` folder, run with Python 3:
   - `jobs.py` lists live open roles from a company's Greenhouse, Ashby or Lever job board, with posting dates. Standard library only.
-  - `resume.py` inspects the base resume, builds tailored versions that keep its formatting (or a clean ATS-friendly layout), and exports a PDF with a page count. Needs `pip install python-docx`.
+  - `resume.py` inspects the base resume, builds tailored versions that keep its formatting (or a clean ATS-friendly layout), and exports a PDF with a page count. It needs the python-docx library. If it's missing, tell the user, then run `pip3 install python-docx` once they agree.
+- **Job-search connectors (optional):** if one is connected, such as ZipRecruiter, use it as another source of listings.

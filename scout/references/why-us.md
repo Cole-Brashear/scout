@@ -19,7 +19,8 @@ Recruiters read hundreds of answers that say the company is "innovative" and the
 
 ## Style
 
-- Match the user's voice from `profile.md` "Writing voice": their sentence length, their words, their level of formality.
+- Match the user's voice from `profile.md` "Writing voice": their sentence length, their words, their level of formality. If that section is still thin (no LinkedIn About, short chat messages), ask once for something they wrote, like a cover letter or an email, and update it.
+- For behavioral prompts, use a story from `facts.md`. If there isn't one that fits, ask for it now in one line ("Tell me about a time you had to handle a conflict on a team") and save it under "Stories".
 - Plain words. Cut "passionate", "thrilled", "leverage", "delve", "synergy", "fast-paced environment", "I believe I would be a great fit".
 - No em-dashes; use commas, periods or parentheses. Em-dashes are one of the most recognizable signs of AI-written text.
 - Stay inside the character or word limit. Count before showing it.

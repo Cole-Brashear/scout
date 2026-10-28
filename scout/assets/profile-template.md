@@ -1,6 +1,6 @@
 # Scout profile: [Name]
 
-Onboarding: in progress (part 0 of 9)
+Onboarding: in progress (step 1 of 4)
 Last updated: YYYY-MM-DD
 School: [School], graduating [Month Year], [Major(s)]
 
@@ -90,9 +90,13 @@ Apply at 3.5 or above. Show 3.0-3.5 as a "maybe" with the reason. Skip below 3.0
 - **Hours per week:** [ ]
 - **Timeline notes:** [recruiting season for their targets, deadlines, offers in hand]
 
+## Network
+
+[Filled before the first outreach: family and family friends' industries, mentors, coaches, professors, past bosses, people they already know at target companies, and whether they can use their school's alumni directory or Handshake.]
+
 ## Writing voice
 
-[How they write, from their sample: sentence length, formality, words they use, words they'd never use. Include a 2-3 sentence excerpt of their real writing.]
+[How they write, from their LinkedIn About section, posts, chat messages or a sample: sentence length, formality, words they use, words they'd never use. Include a 2-3 sentence excerpt of their real writing.]
 
 ## Open questions
 

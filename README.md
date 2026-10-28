@@ -12,8 +12,8 @@ Built for college students and new grads.
 
 ## How it works
 
-1. **The interview.** About an hour, one question at a time, and you can split it across sessions. Scout asks about your story, when you're most absorbed, what you'd hate, whose job you'd steal, your money and location limits, and the numbers behind every line on your resume. It pushes past rehearsed answers.
-2. **Your profile.** Everything lands in `profile.md`: hard filters, ranked directions, a scoring rubric, and a "reading between the lines" section where Scout writes what your stories say that you didn't, with the evidence. You then rate 6-8 real postings so it can check its read on you.
+1. **Setup, about 10 minutes.** Scout reads your resume and LinkedIn first, so it only asks what they can't tell it: what you enjoyed most and least, whose job you'd take, how you like to work, and your limits on location, pay and start date. Seven questions, one at a time, and it pushes back on vague answers.
+2. **Your profile.** Everything lands in `profile.md`: hard filters, ranked directions, a scoring rubric, and a "reading between the lines" section where Scout writes what your answers say that you didn't, with the evidence. You rate your first batch of roles so it can check its read on you.
 3. **Find and vet.** Each week Scout checks your job-alert emails, company job boards, LinkedIn and startup boards, reads every full posting, and keeps only the roles that pass your filters. You confirm the week's batch.
 4. **Research.** One brief per role: the story the ideal candidate's resume tells, which signals you're strong or missing on, and the company's own language.
 5. **Fill the gaps.** Scout asks about things you've probably done but left off your resume. Nothing goes on a resume until you confirm it.
@@ -42,22 +42,18 @@ You need access to this repo, then download [`dist/scout.skill`](dist/scout.skil
 mkdir -p ~/.claude/skills && unzip -o ~/Downloads/scout.skill -d ~/.claude/skills/
 ```
 
-### What else you need
+### What you need
 
-- A paid Claude plan with Cowork or Claude Code.
-- The Claude in Chrome extension to fill applications. Without it, Scout gives you an answer sheet to paste from.
-- Python 3 with python-docx for building resumes:
-
-  ```bash
-  pip3 install python-docx
-  ```
-
-  On a Mac, Pages or Word turns them into PDFs. LibreOffice works anywhere.
-- Optional: the Gmail connector, so Scout can read your job-alert emails.
+- **Your resume.** A Word file (.docx) is best, since Scout keeps your formatting when it tailors it. A PDF works too.
+- **Your LinkedIn profile.** Recommended, not required. It fills in what your resume leaves out.
+- **A paid Claude plan** with Cowork or Claude Code.
+- **The Claude in Chrome extension,** with you signed in to LinkedIn in Chrome. Scout uses it to read your LinkedIn, search LinkedIn jobs, find alumni and fill applications. No connector can read LinkedIn, so this is the only way in. Without it, save your LinkedIn profile as a PDF (Resources, then Save to PDF), and Scout gives you an answer sheet to paste into applications.
+- **Python 3,** which most Macs already have. Scout installs the one library it needs the first time it builds a resume, and turns resumes into PDFs with Pages or Word on a Mac, or LibreOffice anywhere.
+- **Optional:** the Gmail connector, so Scout can read your job-alert emails, and a job-search connector like ZipRecruiter for more listings.
 
 ## Start
 
-Make a folder for your search (say, `Job Search`), open it in Claude Code or share it with Cowork, and say **"set up Scout"**. Scout starts the interview. After that, open the same folder and say "what's next" whenever you sit down to work on it.
+Make a folder for your search (say, `Job Search`), open it in Claude Code or share it with Cowork, and say **"set up Scout"**. Have your resume file and LinkedIn URL ready; Scout asks for them first. After that, open the same folder and say "what's next" whenever you sit down to work on it.
 
 Scout keeps everything in that folder:
 
